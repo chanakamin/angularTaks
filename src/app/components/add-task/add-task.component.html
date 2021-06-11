@@ -1,0 +1,6 @@
+<form *ngIf="newTask" (ngSubmit)="createTask()">
+    <input type="text" [(ngModel)]="newTask.description" name="description" /> | 
+    <input type="checkbox" [(ngModel)]="newTask.done" name="done" /> <br/>
+    <input type="text" [(ngModel)]="newTask.createdBy" name="createdBy" /> <br/>
+    <button type="submit">create</button>
+</form>
